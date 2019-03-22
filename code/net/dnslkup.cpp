@@ -25,7 +25,8 @@
 static uint8_t dnstid_l = 0; // a counter for transaction ID
 // src port high byte must be a a0 or higher:
 #define DNSCLIENT_SRC_PORT_H 0xe0 
-static uint8_t dnsip[4] = { 8, 8, 8, 8 }; // the google public DNS, don't change unless there is a real need
+static uint8_t dnsip[4] = { 1, 1, 1, 1 }; // the google public DNS, don't change unless there is a real need
+// Changed to 1.1.1.1 as google DNS is blocked on my network 
 static uint8_t haveDNSanswer = 0;
 static uint8_t dns_answerip[4];
 static uint8_t dns_ansError = 0;
